@@ -15,22 +15,16 @@ body {
 
 a {
   color: #007bff;
-  border-bottom: 2px solid rgba(0, 123, 255, 0); }
+  border-bottom: 2px solid rgba(0, 123, 255, 0);
+  text-decoration: none; }
   a:hover {
     color: #007bff;
     text-decoration: none;
     border-bottom: 2px solid rgba(0, 123, 255, 0.3); }
 
-.heading {
-  font-family: "utopia-std-display", serif; }
-
 .btn {
   padding: 0.25rem 1rem;
   border-radius: 1rem; }
-
-@media screen and (min-width: 768px) {
-  .border-btm-md .border-bottom {
-    border-bottom: none !important; } }
 
 .app-icon {
   max-width: 200px;
@@ -88,34 +82,10 @@ a {
   z-index: 1; }
 
 .article.article-type-post {
-  max-width: 600px;
   margin: 0 auto; }
   .article.article-type-post img {
     max-width: 100%;
     border-radius: 0.3rem; }
-
-.active {
-  color: #007bff; }
-
-header .scrolled {
-  position: fixed;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid rgba(85, 85, 85, 0.1); }
-  @media screen and (min-width: 600px) {
-    header .scrolled {
-      transform: rotate(90deg);
-      transition: all 0.2s;
-      left: -100px;
-      top: 130px;
-      left: -110px; } }
-  @media screen and (max-width: 599px) {
-    header .scrolled {
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 8px 8px 20px;
-      transition: all 0.2s; } }
 
 @media screen and (max-width: 599px) {
   footer {
@@ -180,9 +150,6 @@ a.text-dark:hover {
 .archive-list-item {
   list-style: none; }
 
-.article.article-type-post {
-  max-width: initial; }
-
 .archive-post:hover {
   background-color: rgba(85, 85, 85, 0.1);
   border-radius: 1rem; }
@@ -191,19 +158,32 @@ a.text-dark:hover {
   text-decoration: none;
   color: inital; }
 
-.hero-heading {
-  margin-left: -100px; }
+@media screen and (max-width: 450px) {
+  .archive-post {
+    background-color: rgba(85, 85, 85, 0.1);
+    border-radius: 1rem; } }
 
-.article h1,
-.article h2,
-.article h3,
-.article h4,
-.article h5,
-.article h6,
-.archive h1,
-.archive h2,
-.archive h3,
-.archive h4,
-.archive h5,
-.archive h6 {
-  margin: 3rem 0 1rem 0; }
+@media screen and (min-width: 450px) {
+  .article h1,
+  .article h2,
+  .article h3,
+  .article h4,
+  .article h5,
+  .article h6,
+  .article time,
+  .archive h1,
+  .archive h2,
+  .archive h3,
+  .archive h4,
+  .archive h5,
+  .archive h6,
+  .archive time {
+    max-width: 600px;
+    margin: 2rem auto 1rem; } }
+
+@media screen and (min-width: 450px) {
+  p,
+  ul,
+  ol {
+    max-width: 600px;
+    margin: 0 auto; } }
