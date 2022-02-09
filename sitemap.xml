@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/design-tokens/</loc>
+    <loc>http://wwwanyu.com/cup/</loc>
     
     <lastmod>2022-02-08</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/cup/</loc>
+    <loc>http://wwwanyu.com/design-tokens/</loc>
     
     <lastmod>2022-02-08</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/blog/what-i-read-this-summer/</loc>
+    <loc>http://wwwanyu.com/blog/please-go-hiking-alone/</loc>
     
     <lastmod>2022-02-08</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/blog/please-go-hiking-alone/</loc>
+    <loc>http://wwwanyu.com/blog/what-i-read-this-summer/</loc>
     
     <lastmod>2022-02-08</lastmod>
     
@@ -209,13 +209,6 @@
 
   
   <url>
-    <loc>http://wwwanyu.com/tags/review/</loc>
-    <lastmod>2022-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wwwanyu.com/tags/travel/</loc>
     <lastmod>2022-02-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -223,7 +216,7 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/tags/motivation/</loc>
+    <loc>http://wwwanyu.com/tags/review/</loc>
     <lastmod>2022-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -272,7 +265,7 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/tags/reading/</loc>
+    <loc>http://wwwanyu.com/tags/motivation/</loc>
     <lastmod>2022-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -300,14 +293,21 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/tags/developent/</loc>
+    <loc>http://wwwanyu.com/tags/UI/</loc>
     <lastmod>2022-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/tags/UI/</loc>
+    <loc>http://wwwanyu.com/tags/reading/</loc>
+    <lastmod>2022-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wwwanyu.com/tags/developent/</loc>
     <lastmod>2022-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
