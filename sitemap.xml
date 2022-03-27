@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/design-tokens/</loc>
+    <loc>http://wwwanyu.com/cup/</loc>
     
     <lastmod>2022-02-08</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/cup/</loc>
+    <loc>http://wwwanyu.com/design-tokens/</loc>
     
     <lastmod>2022-02-08</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/blog/design-survey-for-Kuaitshiu/</loc>
+    <loc>http://wwwanyu.com/blog/the-thunder-rod-review/</loc>
     
     <lastmod>2022-02-08</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/blog/the-thunder-rod-review/</loc>
+    <loc>http://wwwanyu.com/blog/design-survey-for-Kuaitshiu/</loc>
     
     <lastmod>2022-02-08</lastmod>
     
@@ -239,20 +239,6 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/tags/Apple/</loc>
-    <lastmod>2022-03-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://wwwanyu.com/tags/UX/</loc>
-    <lastmod>2022-03-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wwwanyu.com/tags/motivation/</loc>
     <lastmod>2022-03-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -261,6 +247,20 @@
   
   <url>
     <loc>http://wwwanyu.com/tags/podcast/</loc>
+    <lastmod>2022-03-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wwwanyu.com/tags/Apple/</loc>
+    <lastmod>2022-03-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wwwanyu.com/tags/UX/</loc>
     <lastmod>2022-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -309,14 +309,14 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/tags/UI/</loc>
+    <loc>http://wwwanyu.com/tags/developent/</loc>
     <lastmod>2022-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/tags/developent/</loc>
+    <loc>http://wwwanyu.com/tags/UI/</loc>
     <lastmod>2022-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
