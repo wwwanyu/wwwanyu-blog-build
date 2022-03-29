@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/blog/podcasts-listened/</loc>
+    <loc>http://wwwanyu.com/blog/showmygear/</loc>
     
     <lastmod>2022-02-08</lastmod>
     
@@ -119,7 +119,7 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/blog/showmygear/</loc>
+    <loc>http://wwwanyu.com/blog/podcasts-listened/</loc>
     
     <lastmod>2022-02-08</lastmod>
     
@@ -239,20 +239,6 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/tags/Apple/</loc>
-    <lastmod>2022-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://wwwanyu.com/tags/UX/</loc>
-    <lastmod>2022-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wwwanyu.com/tags/motivation/</loc>
     <lastmod>2022-03-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -261,6 +247,20 @@
   
   <url>
     <loc>http://wwwanyu.com/tags/podcast/</loc>
+    <lastmod>2022-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wwwanyu.com/tags/Apple/</loc>
+    <lastmod>2022-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wwwanyu.com/tags/UX/</loc>
     <lastmod>2022-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -288,13 +288,6 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/tags/app-apeh/</loc>
-    <lastmod>2022-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wwwanyu.com/tags/design-survey/</loc>
     <lastmod>2022-03-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -302,7 +295,21 @@
   </url>
   
   <url>
+    <loc>http://wwwanyu.com/tags/app-apeh/</loc>
+    <lastmod>2022-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://wwwanyu.com/tags/branding/</loc>
+    <lastmod>2022-03-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wwwanyu.com/tags/web-design/</loc>
     <lastmod>2022-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -317,13 +324,6 @@
   
   <url>
     <loc>http://wwwanyu.com/tags/UI/</loc>
-    <lastmod>2022-03-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://wwwanyu.com/tags/web-design/</loc>
     <lastmod>2022-03-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
