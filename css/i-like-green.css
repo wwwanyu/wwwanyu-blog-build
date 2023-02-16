@@ -89,14 +89,17 @@ header a:after,
 .header {
   width: 100%;
   flex-direction: column; }
-  @media (max-width: 1023px) {
-    .header {
-      width: auto; } }
   .header.scrolled {
+    width: 100%;
     mix-blend-mode: difference;
     top: 0;
     right: 0;
     width: auto; }
+    @media (max-width: 768px) {
+      .header.scrolled {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between; } }
     .header.scrolled .heading {
       color: #a7b4c1;
       isolation: isolate; }
