@@ -194,7 +194,7 @@ p {
   transition: all 0.4s ease-in-out; }
   @media (max-width: 1365px) {
     .intro {
-      overflow: hidden; } }
+      display: none; } }
   @media (min-width: 1366px) {
     .intro {
       position: fixed;
@@ -235,7 +235,7 @@ p {
 
 .rotate-intro {
   transition: all 0.4s ease-in-out; }
-  @media (min-width: 768px) {
+  @media (min-width: 1366px) {
     .rotate-intro svg {
       padding-top: 90px;
       padding-left: 40px; } }
@@ -267,19 +267,6 @@ p {
         animation-delay: 0.4s; }
       .rotate-intro svg #han-part2 path:nth-child(4) {
         animation-delay: 0.6s; }
-
-@media (min-width: 376px) {
-  .intro-cursor {
-    display: block;
-    position: absolute;
-    background-color: var(--primary);
-    width: 20px;
-    height: 20px;
-    transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
-    user-select: none;
-    pointer-events: none;
-    z-index: 10000;
-    border-radius: 100%; } }
 
 hr {
   border: 2px solid var(--primary); }
