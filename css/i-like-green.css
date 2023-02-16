@@ -351,3 +351,12 @@ ul {
 
 .rotate {
   animation: rotation 80s linear infinite; }
+
+@media (max-width: 1600px) {
+  .overwrite-width {
+    width: 100%;
+    margin-left: 0; } }
+
+.tag {
+  border-radius: 20px;
+  background-color: rgba(88, 75, 62, 0.1); }
