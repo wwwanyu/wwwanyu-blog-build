@@ -365,6 +365,13 @@
   </url>
   
   <url>
+    <loc>http://wwwanyu.com/tags/developent/</loc>
+    <lastmod>2023-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://wwwanyu.com/tags/design/</loc>
     <lastmod>2023-02-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -373,13 +380,6 @@
   
   <url>
     <loc>http://wwwanyu.com/tags/UI/</loc>
-    <lastmod>2023-02-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://wwwanyu.com/tags/developent/</loc>
     <lastmod>2023-02-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
