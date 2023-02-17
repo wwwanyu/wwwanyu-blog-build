@@ -25,18 +25,19 @@ const lazyLoad = target => {
 
 lazyTarget.forEach(lazyLoad);
 
-$('.intro').mousemove(function(e) {
-  $('.intro-cursor').eq(0).css({ left: e.pageX, top: e.pageY }); });
-  $('.intro').on("mousemove", function(e) { mouseX = e.pageX; mouseY = e.pageY; }
+$('.intro').mousemove(function (e) {
+  $('.intro-cursor').eq(0).css({ left: e.pageX, top: e.pageY });
+});
+$('.intro').on("mousemove", function (e) { mouseX = e.pageX; mouseY = e.pageY; }
 );
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-  if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     header.classList.add('position-fixed', 'scrolled', 'z-index-1');
     globalnav.classList.add('scrolled');
-  }else{
+  } else {
     header.classList.remove('position-fixed', 'scrolled', 'z-index-1');
     globalnav.classList.remove('scrolled');
   }
@@ -53,17 +54,19 @@ var spriteSheet = {
   duration: 3
 };
 
-TweenLite.set(frames, { 
-  force3D: true,
-  scrollTrigger:{
-    trigger: ".frames",
-    scrub: true
-  }
-});
+if (frames) {
+  TweenLite.set(frames, {
+    force3D: true,
+    scrollTrigger: {
+      trigger: ".frames",
+      scrub: true
+    }
+  });
+}
 
-var tl = new TimelineMax({ repeat: -1});
+var tl = new TimelineMax({ repeat: -1 });
 
-for (var i = 0; i < spriteSheet.total; i++) {  
+for (var i = 0; i < spriteSheet.total; i++) {
   tl.set(frames, {
     x: (i % spriteSheet.cols) * -spriteSheet.width,
     y: Math.floor(i / spriteSheet.cols) * -spriteSheet.height
@@ -71,7 +74,7 @@ for (var i = 0; i < spriteSheet.total; i++) {
 }
 
 ScrollTrigger.matchMedia({
-  "(min-width: 1366px)": function(){
+  "(min-width: 1366px)": function () {
     let wSquat = gsap.timeline({
       scrollTrigger: {
         trigger: ".intro",
@@ -80,10 +83,10 @@ ScrollTrigger.matchMedia({
         scrub: true,
       }
     });
-    
-    wSquat.to(".w-squat", {opacity: 0, rotation: 100})
-          .to(".w-squat", {opacity: 1, rotation: -90, x:180});
-    
+
+    wSquat.to(".w-squat", { opacity: 0, rotation: 100 })
+      .to(".w-squat", { opacity: 1, rotation: -90, x: 180 });
+
     gsap.to(".intro", {
       scrollTrigger: {
         trigger: ".intro",
@@ -96,7 +99,7 @@ ScrollTrigger.matchMedia({
       ease: "none",
       duration: 1
     });
-    
+
     gsap.to(".w-on-the-edge", {
       scrollTrigger: {
         trigger: ".intro",
@@ -111,7 +114,7 @@ ScrollTrigger.matchMedia({
     });
   },
 
-  "(max-width: 1365px)": function(){
+  "(max-width: 1365px)": function () {
     let wSquat = gsap.timeline({
       scrollTrigger: {
         trigger: ".intro",
@@ -121,10 +124,10 @@ ScrollTrigger.matchMedia({
         scrub: true,
       }
     });
-    
-    wSquat.to(".w-squat", {opacity: 0, rotation: 100})
-          .to(".w-squat", {opacity: 1, rotation: -90});
-    
+
+    wSquat.to(".w-squat", { opacity: 0, rotation: 100 })
+      .to(".w-squat", { opacity: 1, rotation: -90 });
+
     gsap.to(".intro", {
       scrollTrigger: {
         trigger: ".intro",
@@ -136,7 +139,7 @@ ScrollTrigger.matchMedia({
       rotation: 90,
       duration: 1
     });
-    
+
     gsap.to(".w-on-the-edge", {
       scrollTrigger: {
         trigger: ".intro",
