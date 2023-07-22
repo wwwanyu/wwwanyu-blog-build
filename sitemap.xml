@@ -295,13 +295,6 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/tags/hiking/</loc>
-    <lastmod>2023-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wwwanyu.com/tags/motivation/</loc>
     <lastmod>2023-07-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -310,6 +303,13 @@
   
   <url>
     <loc>http://wwwanyu.com/tags/podcast/</loc>
+    <lastmod>2023-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wwwanyu.com/tags/hiking/</loc>
     <lastmod>2023-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
