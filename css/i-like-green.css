@@ -78,7 +78,7 @@ a.external-link:hover::after {
   border: 2px solid var(--primary);
   border-radius: 100px;
   background-color: transparent;
-  color: var(--dark);
+  color: var(--primary);
 }
 .button.primary:hover {
   background-color: var(--primary);
