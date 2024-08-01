@@ -73,13 +73,15 @@
       <style>
     body {
         background-color: #161616;
+        overscroll-behavior: none;
+        overflow-y: hidden
     }
 
     #canvas1 {
         background-color: #191919;
         position: absolute;
-        z-index: 1;
-        top: 0;
+        z-index: -1;
+        top: 200px;
         left: 0;
         border: 1px solid #fff;
     }
