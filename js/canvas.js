@@ -1,41 +1,48 @@
 const canvas = document.querySelector("#canvas1");
+const verteces_canvas = document.querySelector("#vertecesCanvas");
 const ctx = canvas.getContext('2d');
-const CANVAS_WIDTH = canvas.width = window.innerWidth * 0.99;
-const CANVAS_HEIGHT = canvas.height = window.innerHeight * 0.99 - 100;
-
-const Base = { x: 200, y: 440 };
+const ctx_verteces = verteces_canvas.getContext('2d');
+const pentagramBase = { x: 200, y: 440 };
 const radius = 200;
 const mouse = new Image();
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+verteces_canvas.width = window.innerWidth;
+verteces_canvas.height = window.innerHeight;
 let mouseWidth = 100;
 let mouseHeight = 100;
-let mouseX = CANVAS_WIDTH - mouseWidth,
+let mouseX = canvas.width - mouseWidth,
     mouseY = 0;
 let draggable = false;
 let overlay = false;
 let vertexX = 0;
+
 mouse.src = '/images/evil-pentagram/mouse.png';
 
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.lineWidth = 10;
     ctx.fillStyle = "rgba(0,255,10, 0.4)";
+    // randomColors = [Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255)];
+    // color = `rgb(${this.randomColors[0]}, ${this.randomColors[1]}, ${this.randomColors[2]})`;
     ctx.beginPath();
     ctx.strokeStyle = '#00FF0A';
     ctx.moveTo(410, 260);
-    ctx.arc(200, 240, 210, 0, Math.PI * 2, true);
+    ctx.arc(200, 240, 210, 0, Math.PI * 2);
     ctx.stroke();
-    ctx.moveTo(Base.x, Base.y);
+
+    ctx.moveTo(pentagramBase.x, pentagramBase.y);
     ctx.beginPath();
     for (var i = 1; i <= 5; ++i) {
         var th = i * 4 * Math.PI / 5;
-        var x = Base.x - radius * Math.sin(th);
-        var y = Base.y - radius + radius * Math.cos(th);
+        var x = pentagramBase.x - radius * Math.sin(th);
+        var y = pentagramBase.y - radius + radius * Math.cos(th);
         ctx.lineTo(x, y);
     }
     for (var i = 1; i <= 5; ++i) {
         var th = i * 4 * Math.PI / 5;
-        vertexX = Base.x - radius * Math.sin(th);
-        var y = Base.y - radius + radius * Math.cos(th);
+        vertexX = pentagramBase.x - radius * Math.sin(th);
+        var y = pentagramBase.y - radius + radius * Math.cos(th);
         ctx.fillRect(vertexX - 50, y - 50, 100, 100);
     }
     ctx.lineJoin = 'miter';
@@ -97,6 +104,8 @@ canvas.addEventListener('touchend', e => {
 })
 
 //Todo:
-// 1. make it draggable in the web browser on mobile phones
-// 2. when the mouse entered one of the squares, make it react
-// 3. make canvas web page responsive
+// 1. when the mouse entered one of the squares, make it react
+//  - get the area of pentacle
+//  - watch the part detect by color in raven tutorail, to see if we can use it
+// 2. make canvas web page responsive
+// 3. improve the drag&drop experience on android
