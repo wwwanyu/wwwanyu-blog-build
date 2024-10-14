@@ -19,10 +19,11 @@ let vertexX = 0;
 
 mouse.src = '/images/evil-pentagram/mouse.png';
 
+
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.lineWidth = 10;
-    ctx.fillStyle = "rgba(0,255,10, 0.4)";
+    ctx.fillStyle = "rgba(84,162,255, 1)";
     // randomColors = [Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255)];
     // color = `rgb(${this.randomColors[0]}, ${this.randomColors[1]}, ${this.randomColors[2]})`;
     ctx.beginPath();
@@ -94,6 +95,7 @@ canvas.addEventListener('mouseup', e => {
     mouseHeight = 100;
     mouseX = e.layerX - (mouseWidth / 2);
     mouseY = e.layerY - (mouseHeight / 2) + 10;
+    console.log('mouse up', e);
 })
 canvas.addEventListener('touchend', e => {
     draggable = false;
@@ -102,6 +104,7 @@ canvas.addEventListener('touchend', e => {
     mouseX = e.layerX - (mouseWidth / 2);
     mouseY = e.layerY - (mouseHeight / 2) + 10;
 })
+
 
 //Todo:
 // 1. when the mouse entered one of the squares, make it react
