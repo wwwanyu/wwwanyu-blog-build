@@ -101,6 +101,11 @@ header a:after,
   flex-direction: column;
   transform: all 0.4s ease-in-out;
 }
+@media (max-width: 768px) {
+  .global-nav {
+    flex-direction: row;
+  }
+}
 @media (max-width: 1023px) {
   .global-nav.scrolled {
     mix-blend-mode: difference;
@@ -111,11 +116,19 @@ header a:after,
 }
 
 .header {
-  width: 100%;
   flex-direction: column;
+  right: 0;
+}
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    right: initial;
+  }
 }
 .header.scrolled {
-  width: 100%;
   mix-blend-mode: difference;
   top: 0;
   right: 0;
