@@ -106,11 +106,10 @@ header a:after,
     flex-direction: row;
   }
 }
-@media (max-width: 1023px) {
+@media (min-width: 769px) {
   .global-nav.scrolled {
     mix-blend-mode: difference;
     transform: all 0.4s ease-in-out;
-    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -118,6 +117,11 @@ header a:after,
 .header {
   flex-direction: column;
   right: 0;
+}
+@media (min-width: 769px) {
+  .header {
+    position: absolute;
+  }
 }
 @media (max-width: 768px) {
   .header {
