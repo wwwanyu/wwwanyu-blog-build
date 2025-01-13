@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wwwanyu.com/blog/web3matters-logo-proposal-ijustmatter/</loc>
+    
+    <lastmod>2025-01-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://wwwanyu.com/blog/web3matters-logo-proposal-weeklyhighlight/</loc>
+    
+    <lastmod>2025-01-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://wwwanyu.com/canvas2/</loc>
     
     <lastmod>2024-10-15</lastmod>
@@ -14,24 +32,6 @@
     <loc>http://wwwanyu.com/blog/how-much-should-a-logo-cost/</loc>
     
     <lastmod>2024-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://wwwanyu.com/blog/web3matters-logo-proposal-ijustmatter/</loc>
-    
-    <lastmod>2024-09-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://wwwanyu.com/blog/web3matters-logo-proposal-weeklyhighlight/</loc>
-    
-    <lastmod>2024-09-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

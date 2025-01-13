@@ -82,6 +82,7 @@ a.external-link:hover::after {
 }
 .button.primary:hover {
   background-color: var(--primary);
+  color: var(--dark);
 }
 
 a.button:after {
@@ -146,6 +147,15 @@ header a:after,
     justify-content: space-between;
   }
 }
+.header.scrolled .button.primary {
+  border-color: rgb(213, 67, 158);
+  color: rgb(213, 67, 158);
+  isolation: isolate;
+}
+.header.scrolled .button.primary:hover {
+  background-color: rgb(213, 67, 158);
+  color: #a7b4c1;
+}
 .header.scrolled .heading {
   color: rgb(167, 180, 193);
   isolation: isolate;
@@ -153,19 +163,8 @@ header a:after,
 .header.scrolled .heading:hover {
   color: #e4378a;
 }
-.header.scrolled .button.primary {
-  border-color: rgb(213, 67, 158);
-  isolation: isolate;
-}
-.header.scrolled .button.primary:hover {
-  background-color: rgb(213, 67, 158);
-  color: #000;
-}
 .header.scrolled a {
   color: #a7b4c1;
-}
-.header.scrolled a:hover {
-  color: #e4378a;
 }
 .header.scrolled a small {
   color: #584b3e;
@@ -372,7 +371,7 @@ p {
 }
 
 hr {
-  border: 2px solid var(--primary);
+  border: 2px solid var(--dark);
 }
 
 .ioLazyload {
