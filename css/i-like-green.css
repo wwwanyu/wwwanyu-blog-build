@@ -7,7 +7,7 @@
 body {
   background-color: var(--light);
   font-size: 16px;
-  font-family: "Be Vietnam Pro", "Noto Sans TC", sans-serif;
+  font-family: objektiv-mk1, "Noto Sans TC", sans-serif;
   color: var(--dark);
   line-height: 1.5;
   overflow-x: hidden;
@@ -177,14 +177,12 @@ header a:after,
 }
 
 h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
+  font-size: 1.8rem;
   letter-spacing: 0.02rem;
 }
 
 h2 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 1.8rem;
   letter-spacing: 0.02rem;
 }
 
