@@ -80,11 +80,10 @@ canvas.addEventListener('mousemove', e => {
     }
 })
 
-canvas.addEventListener('mouseup', e => {
+canvas.addEventListener('mouseup', () => {
     draggable = false;
     mouseWidth = 100;
     mouseHeight = 100;
-    console.log(e)
 })
 
 //Todo:
