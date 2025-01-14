@@ -35,10 +35,9 @@ function handleParticles() {
         particleArray[i].draw();
     }
 }
-function animate() {
+function animateParticle() {
     ctx_particle.clearRect(0, 0, canvas_particle.width, canvas_particle.height);
     handleParticles();
-    requestAnimationFrame(animate);
+    requestAnimationFrame(animateParticle);
 }
-animate();
-console.log(canvas_particle.height);
+animateParticle();

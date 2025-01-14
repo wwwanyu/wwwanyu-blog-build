@@ -33,7 +33,6 @@ function animate() {
     ctx.moveTo(410, 260);
     ctx.arc(200, 240, 210, 0, Math.PI * 2);
     ctx.stroke();
-
     ctx.moveTo(pentagramBase.x, pentagramBase.y);
     ctx.beginPath();
     for (var i = 1; i <= 5; ++i) {
@@ -52,12 +51,14 @@ function animate() {
     ctx.closePath();
     ctx.stroke();
     ctx.drawImage(mouse, mouseX, mouseY, mouseWidth, mouseHeight);
-    ctx.drawImage(fish, fishX, fishY, fishWidth, fishHeight);
     requestAnimationFrame(animate);
 }
+
+animate();
+
 randomColors = [Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255)];
 ctx.fillStyle = `rgba(${randomColors}, 1)`;
-animate();
+
 canvas.addEventListener('mousedown', e => {
     if (
         e.layerX <= (mouseX + mouseWidth) &&
@@ -66,8 +67,10 @@ canvas.addEventListener('mousedown', e => {
         e.layerY >= (mouseY)
     ) {
         draggable = true;
+        console.log('mouse!');
     }
 })
+
 canvas.addEventListener('mousemove', e => {
     if (draggable) {
         mouseX = e.layerX - (mouseWidth / 2);
@@ -76,6 +79,7 @@ canvas.addEventListener('mousemove', e => {
         mouseHeight = 140
     }
 })
+
 canvas.addEventListener('mouseup', e => {
     draggable = false;
     mouseWidth = 100;
