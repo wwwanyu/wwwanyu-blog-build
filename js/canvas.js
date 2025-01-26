@@ -21,21 +21,23 @@ let mouseX = canvas.width - mouseWidth,
 let draggable = false;
 let overlay = false;
 let vertexX = 0;
-let evilScore = 0;
+let evilScore = '0';
+const evilLevelColor = ['#001F01', '#003302', '#006604', '#009906', '#00CC08', '#00FF0A'];
+let showEvilLevelColor = evilLevelColor[0];
 
 ctx.font = '24px Arial';
 mouse.src = '/images/evil-pentagram/mouse.png';
 fish.src = '/images/evil-pentagram/fish.png';
 
 function evilLevel() {
-    ctx.fillStyle = 'green';
+    ctx.fillStyle = '#00FF0A';
     ctx.fillText('Evil: ' + evilScore, 10, 520);
 }
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.lineWidth = 10;
     ctx.beginPath();
-    ctx.strokeStyle = '#00FF0A';
+    ctx.strokeStyle = showEvilLevelColor;
     ctx.moveTo(460, 250);
     ctx.arc(250, 248, 210, 0, Math.PI * 2);
     ctx.stroke();
@@ -98,9 +100,21 @@ window.addEventListener('mouseup', e => {
     if (r === randomColors[0] && g === randomColors[1] && b === randomColors[2]) {
         evilScore++;
     }
-    // Log the RGBA values
-    console.log(`RGBA: (${r}, ${g}, ${b}, ${a})`);
-    console.log(`mouse is at x:${mouseX}, y:${mouseY}`);
+    if (evilScore === 1) {
+        showEvilLevelColor = evilLevelColor[1];
+    }
+    if (evilScore === 2) {
+        showEvilLevelColor = evilLevelColor[2];
+    }
+    if (evilScore === 3) {
+        showEvilLevelColor = evilLevelColor[3];
+    }
+    if (evilScore === 4) {
+        showEvilLevelColor = evilLevelColor[4];
+    }
+    if (evilScore === 5) {
+        showEvilLevelColor = evilLevelColor[5];
+    }
 })
 
 //Todo:

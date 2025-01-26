@@ -370,6 +370,15 @@ p {
   animation-delay: 0.6s;
 }
 
+.intro-spline {
+  height: 40vh;
+}
+@media (max-width: 1366px) {
+  .intro-spline {
+    height: 300px;
+  }
+}
+
 hr {
   border: 2px solid var(--dark);
 }
