@@ -38,6 +38,11 @@ a:after {
   bottom: 0;
 }
 
+a.fancybox:after,
+a.fancybox-close:after {
+  display: none;
+}
+
 .txt-primary {
   color: var(--primary);
 }

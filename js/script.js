@@ -155,3 +155,7 @@ ScrollTrigger.matchMedia({
     });
   }
 });
+
+if ($.fancybox) {
+  $('.fancybox').fancybox();
+}
