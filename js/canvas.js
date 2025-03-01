@@ -6,6 +6,13 @@ const pentagramBase = { x: 250, y: 450 };
 const radius = 200;
 const mouse = new Image();
 const fish = new Image();
+const dust = new Image();
+const spriteWidth = 559;
+const spriteHeight = 557;
+const staggerFrames = 6;
+let frameX = 0;
+let frameY = 0;
+let gameFrame = 0;
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 rectangles_canvas.width = window.innerWidth;
@@ -24,15 +31,36 @@ let vertexX = 0;
 let evilScore = '0';
 const evilLevelColor = ['#001F01', '#003302', '#006604', '#009906', '#00CC08', '#00FF0A'];
 let showEvilLevelColor = evilLevelColor[0];
-
+let triggerDust = false;
 ctx.font = '24px Arial';
 mouse.src = '/images/evil-pentagram/mouse.png';
 fish.src = '/images/evil-pentagram/fish.png';
+dust.src = '/images/evil-pentagram/dust.png';
+
+randomColors = [Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255)];
+rectangles_ctx.fillStyle = `rgba(${randomColors}, 1)`;
 
 function evilLevel() {
     ctx.fillStyle = '#00FF0A';
     ctx.fillText('Evil: ' + evilScore, 10, 520);
 }
+
+function dustEffect() {
+    ctx.drawImage(dust,
+        frameX * spriteWidth,
+        frameY * spriteHeight,
+        spriteWidth,
+        spriteHeight,
+        mouseX - 20, mouseY - 20,
+        mouseWidth + 40,
+        mouseHeight + 40);
+    if (gameFrame % staggerFrames == 0) {
+        if (frameX < 9) frameX++;
+        else frameX = 0;
+    }
+    gameFrame++;
+}
+
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.lineWidth = 10;
@@ -62,10 +90,8 @@ function animate() {
     ctx.drawImage(mouse, mouseX, mouseY, mouseWidth, mouseHeight);
     requestAnimationFrame(animate);
 }
-animate();
 
-randomColors = [Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255)];
-rectangles_ctx.fillStyle = `rgba(${randomColors}, 1)`;
+animate();
 
 window.addEventListener('mousedown', e => {
     if (
@@ -95,7 +121,6 @@ window.addEventListener('mouseup', e => {
     const r = imageDatas[0];
     const g = imageDatas[1];
     const b = imageDatas[2];
-    const a = imageDatas[3] / 255;
 
     if (r === randomColors[0] && g === randomColors[1] && b === randomColors[2]) {
         evilScore++;
@@ -118,7 +143,7 @@ window.addEventListener('mouseup', e => {
 })
 
 //Todo:
-// 1. Make the reaction of the mouse is dropped on the pentagram
-// 2. Add more objects
-// 3. make canvas web page responsive
-// 4. improve the drag&drop experience on mobile
+// 1. Add the drop visual effect
+// 2. Add more objects to the canvas
+// 3. Fix "When the mouse is on the pentagram, click outside the pentagram, the score will increase"
+// 4. Improve the drag&drop experience on mobile
