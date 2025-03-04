@@ -87,6 +87,7 @@ function animate() {
         rectangles_ctx.fillRect(vertexX - 50, y - 50, 100, 100);
     }
     evilLevel();
+    if (triggerDust) dustEffect();
     ctx.drawImage(mouse, mouseX, mouseY, mouseWidth, mouseHeight);
     requestAnimationFrame(animate);
 }
@@ -116,6 +117,7 @@ window.addEventListener('mousemove', e => {
 window.addEventListener('mouseup', e => {
     const imageDatas = rectangles_ctx.getImageData(mouseX + 50, mouseY + 50, 1, 1).data;
     draggable = false;
+    triggerDust = true;
     mouseWidth = 100;
     mouseHeight = 100;
     const r = imageDatas[0];
