@@ -483,20 +483,6 @@
   </url>
   
   <url>
-    <loc>http://wwwanyu.com/tags/graphic-design/</loc>
-    <lastmod>2025-06-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://wwwanyu.com/tags/should-designers-code/</loc>
-    <lastmod>2025-06-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wwwanyu.com/tags/drawings/</loc>
     <lastmod>2025-06-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -504,7 +490,21 @@
   </url>
   
   <url>
+    <loc>http://wwwanyu.com/tags/graphic-design/</loc>
+    <lastmod>2025-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://wwwanyu.com/tags/crypto/</loc>
+    <lastmod>2025-06-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wwwanyu.com/tags/should-designers-code/</loc>
     <lastmod>2025-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
