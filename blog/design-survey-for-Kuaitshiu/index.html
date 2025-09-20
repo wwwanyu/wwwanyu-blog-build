@@ -35,7 +35,36 @@
   
 <link rel="stylesheet" href="/css/i-like-green.css">
 
-
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wly5jgf',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -84,7 +113,7 @@
   
   <main class="container">
   <div class="row">
-    <article id="post-design-survey-for-Kuaitshiu" class="col-12 col-sm-7 mx-auto" itemscope itemprop="blog post">
+    <article id="post-design-survey-for-Kuaitshiu" class="col-12 col-sm-7 mx-auto mt-sm-5" itemscope itemprop="blog post">
       
 
       
@@ -137,7 +166,7 @@
 <hr>
 <h2 id="很驚喜很意外的是-…"><a href="#很驚喜很意外的是-…" class="headerlink" title="很驚喜很意外的是 …"></a>很驚喜很意外的是 …</h2><p>我原本的主觀認為 Dropbox 的行銷素材跟 GitHub 的功能介面會適合 Kuaitshiu。</p>
 <p>如果沒有做 20s gut test，我會朝向有商務感、無裝飾、可以裝下很多文字資訊的介面來設計。<br>但根據測試結果我觀察到的是完全不同方向，受訪者喜歡的是 Toggl：色彩活潑、趣味感且可愛的，介面上文字較少的。</p>
-<img src="20sGutTest-result.png" lazyload>
+<img class="img-fluid" src="20sGutTest-result.png" lazyload>
 
 <p><strong>我真的很驚訝得到最高分的是可愛風格的介面 😂</strong></p>
 <p>測試過程中觀察到的一切還是得由設計師解讀並做最後的設計決定，不過我覺得這是讓團隊參與設計的好方法，在還沒有投入時間設計可以先探測團隊期待什麼視覺風格，可降低團隊中非設計領域參與者的不安。</p>

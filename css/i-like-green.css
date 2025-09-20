@@ -215,8 +215,9 @@ h6 {
 }
 
 p {
-  font-family: "aileron", sans-serif;
+  font-family: "aileron", "source-han-sans-traditional", sans-serif;
   font-weight: 500;
+  font-style: normal;
   font-size: 1.3rem;
   line-height: 2.2rem;
 }

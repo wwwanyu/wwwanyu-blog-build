@@ -35,7 +35,36 @@
   
 <link rel="stylesheet" href="/css/i-like-green.css">
 
-
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wly5jgf',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -84,7 +113,7 @@
   
   <main class="container">
   <div class="row">
-    <article id="post-addiction" class="col-12 col-sm-7 mx-auto" itemscope itemprop="blog post">
+    <article id="post-doomscrolling" class="col-12 col-sm-7 mx-auto mt-sm-5" itemscope itemprop="blog post">
       
 
       
@@ -106,7 +135,7 @@
       
 
       
-      <img src="/blog/addiction/doomscrolling.jpg" class="img-fluid" title="A cartoon-style yellow figure lies on the ground staring at a smartphone with a blank expression. Behind them is a dark, heavy shadow, suggesting a feeling of gloom or emptiness. The figure looks absorbed in the phone, symbolizing doomscrolling.">
+      <img src="/blog/doomscrolling/doomscrolling.jpg" class="img-fluid" title="A cartoon-style yellow figure lies on the ground staring at a smartphone with a blank expression. Behind them is a dark, heavy shadow, suggesting a feeling of gloom or emptiness. The figure looks absorbed in the phone, symbolizing doomscrolling.">
 <span id="more"></span>
 <p>I recently checked my screen time and it was horrible.</p>
 <p>I’ve tried using the “limit” feature on iOS, but honestly, it’s useless. On my worst day, I still spent 2.35 hours doomscrolling on Threads alone. That’s not just wasted time, it’s time I should have spent on things that actually matter to me.</p>
@@ -169,6 +198,15 @@
   </a>
   
   
+    <a href="/blog/touchgrass-taichung/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong>下一篇</strong>
+      <div class="article-nav-title">
+        
+        Touch Grass at Taichung
+        
+      </div>
+    </a>
+    
 </nav>
 
 

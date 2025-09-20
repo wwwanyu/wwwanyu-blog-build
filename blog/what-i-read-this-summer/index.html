@@ -35,7 +35,36 @@
   
 <link rel="stylesheet" href="/css/i-like-green.css">
 
-
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wly5jgf',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -84,7 +113,7 @@
   
   <main class="container">
   <div class="row">
-    <article id="post-what-i-read-this-summer" class="col-12 col-sm-7 mx-auto" itemscope itemprop="blog post">
+    <article id="post-what-i-read-this-summer" class="col-12 col-sm-7 mx-auto mt-sm-5" itemscope itemprop="blog post">
       
 
       
@@ -115,7 +144,7 @@
 <h2 id="末世男女"><a href="#末世男女" class="headerlink" title="末世男女"></a>末世男女</h2><p>原文書名在封面上被寫得像 “ORYXAND CRAKE” 真的覺得滿傻眼，奇怪的咖啡色書皮搭配上跟第一次世界大戰廢墟感的剪影，這裝幀設計跟內容很不相襯，希望以後會有改版。</p>
 <p>我建議不要讀序，我覺得算有暴雷。</p>
 <p>搭配的書籤是好幾年前入境紐約填的卡，但好像是德文的看不懂。</p>
-<img src="./oryx-and-crake.jpeg" loading="lazy" class="mx-auto d-block">
+<img class="img-fluid" src="./oryx-and-crake.jpeg" loading="lazy">
 
 <hr>
 <h2 id="思考的藝術"><a href="#思考的藝術" class="headerlink" title="思考的藝術"></a>思考的藝術</h2><p>封面很漂亮，但 52 個太多了！搭配的書籤是 Apple gift card。</p>
@@ -130,7 +159,7 @@
 <blockquote>
 <p>如何對付確認偏誤？寫下自己的信念，接著找出否證證明，保持幹掉自己鍾愛的寶貝理論的勇氣，對自己誠實。</p>
 </blockquote>
-<img src="./fifty-two.jpeg" loading="lazy" class="mx-auto d-block">
+<img class="img-fluid" src="./fifty-two.jpeg" loading="lazy">
 
 <hr>
 <h2 id="成為黃種人"><a href="#成為黃種人" class="headerlink" title="成為黃種人"></a>成為黃種人</h2><p>感覺超過一半的頁數在描述歐洲男人一開始覺得「漢人」是白色的，然後改變心意覺得是黃色、橄欖色、深棕色、黑色，不斷的改變想法來來回回。</p>
@@ -139,7 +168,7 @@
 <p>梁啟超跟他的大票男性朋友，因為「黃」帝、「黃」河，而欣然接受自己是黃種人，接著把歐洲男人的歧視修改出自己的版本：在他們自己的世界裡定義黃種人跟白種人一樣高貴尊絕不凡，並歧視深色皮膚的人。</p>
 <p>真的是哭笑不得。</p>
 <p>搭配的書籤是故宮的明信片：清國男皇帝的黃色的龍。</p>
-<img src="./becoming-yellow.jpeg" loading="lazy" class="mx-auto d-block">
+<img class="img-fluid" src="./becoming-yellow.jpeg" loading="lazy">
 
 <hr>
 <h2 id="人的條件"><a href="#人的條件" class="headerlink" title="人的條件"></a>人的條件</h2><p>書籤是台中冰店小涼房的名片。</p>
@@ -147,13 +176,13 @@
 <p>如果你曾經有感覺過上班很浪費生命、總覺得生活好像哪裡不太對的話，我非常非常推薦拜託讀讀看人的條件。</p>
 <p>我覺得這本書可以幫人找到人生解答。</p>
 <p>怎麼會有人有辦法那麼細膩的想出定義自由、工作跟政治是什麼？我覺得鄂蘭的定義能夠帶出身為人好的那一面。</p>
-<img src="./the-human-condition.jpeg" loading="lazy" class="mx-auto d-block">
+<img class="img-fluid" src="./the-human-condition.jpeg" loading="lazy">
 
 <p>因為讀紙本書的時候我不想再看螢幕，只好手寫閱讀筆記。</p>
-<img src="./the-human-condition-taking-note.jpeg" loading="lazy" class="mx-auto d-block">
+<img class="img-fluid" src="./the-human-condition-taking-note.jpeg" loading="lazy">
 
 <p>《人的條件》真的太難了，中間那本《漢納鄂蘭》非常好讀，可以說是鄂蘭說明書。《心智生命》是剛借閱的，完全還沒開始。</p>
-<img src="./arendt-arendt-arendt.jpeg" loading="lazy" class="mx-auto d-block">
+<img class="img-fluid" src="./arendt-arendt-arendt.jpeg" loading="lazy">
 
       
     </article>

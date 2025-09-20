@@ -34,7 +34,36 @@
   
 <link rel="stylesheet" href="/css/i-like-green.css">
 
-
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wly5jgf',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -99,7 +128,31 @@
     
 
     <div class="col-12 col-md-3 bg-white">
-  <a class="d-flex flex-column align-items-stretch h-100 p-sm-3 p-5" href="/blog/addiction/" itemprop="url">
+  <a class="d-flex flex-column align-items-stretch h-100 p-sm-3 p-5" href="/blog/touchgrass-taichung/" itemprop="url">
+    <div class="text-end">
+      <div class="article-time">
+  <time datetime="2025-09-20T11:00:44.000Z" itemprop="datePublished">
+    9月 20日, 2025
+  </time>
+</div>
+
+    </div>
+    <h2 class="py-3">
+      Touch Grass at Taichung
+    </h2>
+    <div class="post-excerpt">
+      <img src="/blog/touchgrass-taichung/touchgrass.jpg" class="img-fluid" title="A comic shows a snail climbing the curved white roof of a modern building in an urban park.">
+    </div>
+  </a>
+</div>
+    
+    
+    
+    
+    
+
+    <div class="col-12 col-md-3 bg-white">
+  <a class="d-flex flex-column align-items-stretch h-100 p-sm-3 p-5" href="/blog/doomscrolling/" itemprop="url">
     <div class="text-end">
       <div class="article-time">
   <time datetime="2025-08-30T05:55:43.000Z" itemprop="datePublished">
@@ -112,7 +165,7 @@
       Doomscrolling!
     </h2>
     <div class="post-excerpt">
-      <img src="/blog/addiction/doomscrolling.jpg" class="img-fluid" title="A cartoon-style yellow figure lies on the ground staring at a smartphone with a blank expression. Behind them is a dark, heavy shadow, suggesting a feeling of gloom or emptiness. The figure looks absorbed in the phone, symbolizing doomscrolling.">
+      <img src="/blog/doomscrolling/doomscrolling.jpg" class="img-fluid" title="A cartoon-style yellow figure lies on the ground staring at a smartphone with a blank expression. Behind them is a dark, heavy shadow, suggesting a feeling of gloom or emptiness. The figure looks absorbed in the phone, symbolizing doomscrolling.">
     </div>
   </a>
 </div>
@@ -205,30 +258,6 @@
     </h2>
     <div class="post-excerpt">
       <img src="/blog/taipei-book-exhibition-TiBE2025/cover.jpeg" class="img-fluid">
-    </div>
-  </a>
-</div>
-    
-    
-    
-    
-    
-
-    <div class="col-12 col-md-3 bg-white">
-  <a class="d-flex flex-column align-items-stretch h-100 p-sm-3 p-5" href="/blog/how-much-should-a-logo-cost/" itemprop="url">
-    <div class="text-end">
-      <div class="article-time">
-  <time datetime="2024-10-07T14:41:09.000Z" itemprop="datePublished">
-    10月 7日, 2024
-  </time>
-</div>
-
-    </div>
-    <h2 class="py-3">
-      How much should a logo cost?
-    </h2>
-    <div class="post-excerpt">
-      
     </div>
   </a>
 </div>

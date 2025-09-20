@@ -35,7 +35,36 @@
   
 <link rel="stylesheet" href="/css/i-like-green.css">
 
-
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wly5jgf',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -84,7 +113,7 @@
   
   <main class="container">
   <div class="row">
-    <article id="post-app-apeh-logo" class="col-12 col-sm-7 mx-auto" itemscope itemprop="blog post">
+    <article id="post-app-apeh-logo" class="col-12 col-sm-7 mx-auto mt-sm-5" itemscope itemprop="blog post">
       
 
       
@@ -118,7 +147,7 @@
 <p>這個品牌的圖像跟命名以老闆本人為原型，同時也呈現我對阿伯使用資訊的觀察。</p>
 <hr>
 <h3 id="Mood-board"><a href="#Mood-board" class="headerlink" title="Mood board"></a>Mood board</h3><p>畫 Logo 草圖前去光華商場感受氛圍，捕捉應用伯穿梭在巷子裡 PC 工作室的身影。</p>
-<img src="app-apeh-moodboard.png" loading="lazy" alt="很多張照片拼貼在一起，包含扁平卡通化風格插圖、水果紙箱、詹記麻辣火鍋店的周邊商品 t-shirt、貨車、鹹油條包裝袋、光華商場商店的招牌、煎台兄弟菜單、財哥檳榔攤 t-shirt、小叮噹、發條橘子中文字體、哈拉星球扭蛋店招牌">
+<img class="img-fluid" src="app-apeh-moodboard.png" loading="lazy" alt="很多張照片拼貼在一起，包含扁平卡通化風格插圖、水果紙箱、詹記麻辣火鍋店的周邊商品 t-shirt、貨車、鹹油條包裝袋、光華商場商店的招牌、煎台兄弟菜單、財哥檳榔攤 t-shirt、小叮噹、發條橘子中文字體、哈拉星球扭蛋店招牌">
 
 <hr>
 <h3 id="Logo-草稿"><a href="#Logo-草稿" class="headerlink" title="Logo 草稿"></a>Logo 草稿</h3><p>網際網路很常用地球來代表，加上阿伯們都喜歡戴的帽子</p>
@@ -139,18 +168,18 @@
 <h2 id="延伸設計"><a href="#延伸設計" class="headerlink" title="延伸設計"></a>延伸設計</h2><p>3D 版 Logo：</p>
 <iframe src="https://my.spline.design/appapeh-95e5e13ff6cdc67cb3ce8593861e9809/" scrolling="no" class="col-12 col-sm-7 offset-sm-5" height="400"></iframe>
 
-<img loading="lazy" src="app-apeh-scenario.png" class="img-fluid" alt="使用者介面風格的插畫，顯示著有使用者頭像跟進度條、圓餅圖跟日曆。">
+<img class="img-fluid" loading="lazy" src="app-apeh-scenario.png" alt="使用者介面風格的插畫，顯示著有使用者頭像跟進度條、圓餅圖跟日曆。">
 
 <p>終端機風格的網站提案：</p>
-<img src="landing.png" loading="lazy" alt="用文字符號拼成的怪手跟城市大樓插圖。">
+<img class="img-fluid" src="landing.png" loading="lazy" alt="用文字符號拼成的怪手跟城市大樓插圖。">
 
 <hr>
 <p>每個成員的名片用程式碼來表達自己：</p>
-<img src="bcard.png" loading="lazy" class="d-block img-fluid" alt="應用伯名片。">
+<img class="img-fluid" src="bcard.png" loading="lazy" alt="應用伯名片。">
 
-<img src="app-apeh-bcard-proposal.jpg" loading="lazy" class="d-block img-fluid" alt="應用伯名片。">
+<img class="img-fluid" src="app-apeh-bcard-proposal.jpg" loading="lazy" alt="應用伯名片。">
 
-<img src="app-apeh-logo-type.svg" loading="lazy" class="d-block img-fluid" alt="畫面左邊是應用伯 logo：一顆帶有兩條經緯線的黑線白色球體，戴著棒球帽跟眼鏡。畫面右手邊是標楷字體的應用伯三個字。">
+<img class="img-fluid" src="app-apeh-logo-type.svg" loading="lazy" alt="畫面左邊是應用伯 logo：一顆帶有兩條經緯線的黑線白色球體，戴著棒球帽跟眼鏡。畫面右手邊是標楷字體的應用伯三個字。">
 
 <hr>
 <h2 id="我學到…"><a href="#我學到…" class="headerlink" title="我學到…"></a>我學到…</h2><p>如果沒有辦法給予個性跟情緒交流，事情真的就會行不通。</p>

@@ -35,7 +35,36 @@
   
 <link rel="stylesheet" href="/css/i-like-green.css">
 
-
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wly5jgf',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -84,7 +113,7 @@
   
   <main class="container">
   <div class="row">
-    <article id="post-great-migration-of-designer" class="col-12 col-sm-7 mx-auto" itemscope itemprop="blog post">
+    <article id="post-great-migration-of-designer" class="col-12 col-sm-7 mx-auto mt-sm-5" itemscope itemprop="blog post">
       
 
       
@@ -115,7 +144,7 @@
 <p>讓我很驚訝的是，在 Figma 之前我是多麽讚嘆 Sketch，而我也是多麽的被受限，不曾幻想過 Figma 這樣子的工具。或許幾年後又會有超乎我想像的設計工具或方式出現，希望到時候已經不會那麼大驚小怪。</p>
 <hr>
 <h2 id="不過，之前的設計檔怎麼辦？"><a href="#不過，之前的設計檔怎麼辦？" class="headerlink" title="不過，之前的設計檔怎麼辦？"></a>不過，之前的設計檔怎麼辦？</h2><p>例如我在設計應用伯的過程歷經了 Affinity Designer、Adobe XD、Sketch 最後在 Figma 落地生根，同一個 app 都散落在各個工具中，維護起來是滿災難的 🤣</p>
-<img src="sketch-to-figma.png" lazylaod alt="左邊是設計軟體 Sketch 的畫面，右邊是設計軟體 Figma 的畫面，兩邊都顯示同樣數量跟顏色的正方形色塊。">
+<img class="img-fluid" src="sketch-to-figma.png" lazylaod alt="左邊是設計軟體 Sketch 的畫面，右邊是設計軟體 Figma 的畫面，兩邊都顯示同樣數量跟顏色的正方形色塊。">
 
 <p>因為我的情況是設計規模還算小，所以每換一次工具就摸摸鼻子重新準備 design token。</p>
 <p>很好奇其他大型設計團隊要怎麼轉換工具？</p>

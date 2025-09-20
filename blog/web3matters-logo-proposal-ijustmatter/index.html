@@ -35,7 +35,36 @@
   
 <link rel="stylesheet" href="/css/i-like-green.css">
 
-
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wly5jgf',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -84,7 +113,7 @@
   
   <main class="container">
   <div class="row">
-    <article id="post-web3matters-logo-proposal-ijustmatter" class="col-12 col-sm-7 mx-auto" itemscope itemprop="blog post">
+    <article id="post-web3matters-logo-proposal-ijustmatter" class="col-12 col-sm-7 mx-auto mt-sm-5" itemscope itemprop="blog post">
       
 
       
@@ -108,13 +137,13 @@
       
       <p><a href="https://denkeni.org" target="_blank" rel="external nofollow noopener noreferrer">Denken</a> 邀請我參加他主辦的 Web3Matters 電子週報 Logo 設計比賽。</p>
 <p>這是獨角獸嗎？不是。<br>這是一隻馬，把週報捲起來，放在額頭上。</p>
-<img src="I-Just-Matter_cover.png">
-<img src="i-just-matter-typography.jpg">
+<img class="img-fluid" src="I-Just-Matter_cover.png">
+<img class="img-fluid" src="i-just-matter-typography.jpg">
 <iframe src="https://my.spline.design/ijustmatter-19fb03a5065a76c48685e5d866611373/" frameborder="0" width="100%" height="500"></iframe>
-<img src="I-Just-Matter-substack.png">
-<img src="I-Just-Matter-matterstown.png">
-<img src="I-Just-Matter-sponsors.png">
-<img src="I-Just-Matter-sticker.png">
+<img class="img-fluid" src="I-Just-Matter-substack.png">
+<img class="img-fluid" src="I-Just-Matter-matterstown.png">
+<img class="img-fluid" src="I-Just-Matter-sponsors.png">
+<img class="img-fluid" src="I-Just-Matter-sticker.png">
       
     </article>
   </div>

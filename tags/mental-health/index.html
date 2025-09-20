@@ -34,7 +34,36 @@
   
 <link rel="stylesheet" href="/css/i-like-green.css">
 
-
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wly5jgf',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -107,11 +136,11 @@
 
 </div>
 <h2 class="py-3">
-  <a href="/blog/addiction/" itemprop="url">
+  <a href="/blog/doomscrolling/" itemprop="url">
     Doomscrolling!
   </a>
 </h2>
-<img src="/blog/addiction/doomscrolling.jpg" class="img-fluid" title="A cartoon-style yellow figure lies on the ground staring at a smartphone with a blank expression. Behind them is a dark, heavy shadow, suggesting a feeling of gloom or emptiness. The figure looks absorbed in the phone, symbolizing doomscrolling.">
+<img src="/blog/doomscrolling/doomscrolling.jpg" class="img-fluid" title="A cartoon-style yellow figure lies on the ground staring at a smartphone with a blank expression. Behind them is a dark, heavy shadow, suggesting a feeling of gloom or emptiness. The figure looks absorbed in the phone, symbolizing doomscrolling.">
 <hr>
 
         </li>

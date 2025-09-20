@@ -34,7 +34,36 @@
   
 <link rel="stylesheet" href="/css/i-like-green.css">
 
-
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wly5jgf',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -92,6 +121,30 @@
   <div class="d-flex align-content-start justify-content-center flex-wrap gap-3">
     
     
+    
+    
+    
+    
+    
+
+    <div class="col-12 col-md-3 bg-white">
+  <a class="d-flex flex-column align-items-stretch h-100 p-sm-3 p-5" href="/blog/how-much-should-a-logo-cost/" itemprop="url">
+    <div class="text-end">
+      <div class="article-time">
+  <time datetime="2024-10-07T14:41:09.000Z" itemprop="datePublished">
+    10月 7日, 2024
+  </time>
+</div>
+
+    </div>
+    <h2 class="py-3">
+      How much should a logo cost?
+    </h2>
+    <div class="post-excerpt">
+      
+    </div>
+  </a>
+</div>
     
     
     
@@ -202,30 +255,6 @@
     </div>
     <h2 class="py-3">
       設計工具大遷移
-    </h2>
-    <div class="post-excerpt">
-      
-    </div>
-  </a>
-</div>
-    
-    
-    
-    
-    
-
-    <div class="col-12 col-md-3 bg-white">
-  <a class="d-flex flex-column align-items-stretch h-100 p-sm-3 p-5" href="/blog/how-i-shrink-image-file-size/" itemprop="url">
-    <div class="text-end">
-      <div class="article-time">
-  <time datetime="2021-11-29T00:12:06.000Z" itemprop="datePublished">
-    11月 29日, 2021
-  </time>
-</div>
-
-    </div>
-    <h2 class="py-3">
-      已知用火之壓縮圖檔的這部分
     </h2>
     <div class="post-excerpt">
       

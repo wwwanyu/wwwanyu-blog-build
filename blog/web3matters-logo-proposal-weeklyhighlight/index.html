@@ -35,7 +35,36 @@
   
 <link rel="stylesheet" href="/css/i-like-green.css">
 
-
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wly5jgf',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -84,7 +113,7 @@
   
   <main class="container">
   <div class="row">
-    <article id="post-web3matters-logo-proposal-weeklyhighlight" class="col-12 col-sm-7 mx-auto" itemscope itemprop="blog post">
+    <article id="post-web3matters-logo-proposal-weeklyhighlight" class="col-12 col-sm-7 mx-auto mt-sm-5" itemscope itemprop="blog post">
       
 
       
@@ -107,12 +136,12 @@
 
       
       <p><a href="https://denkeni.org" target="_blank" rel="external nofollow noopener noreferrer">Denken</a> 邀請我參加他主辦的 Web3Matters 電子週報 Logo 設計比賽。<br>這一款 Logo 要表達的是：「天外飛來一筆的精華」的驚喜感，圖示與字型設計加了一點 geek 的感覺，以襯托 Web3 領域挑戰傳統的特質 😉</p>
-<img src="web3matters-cover.png">
-<img src="web3matters-typography.jpg">
-<img src="web3matters-substack.png">
-<img src="web3matters-matters.png">
-<img src="web3matters-sponsor.png">
-<img src="web3matters-sticker.png">
+<img class="img-fluid" src="web3matters-cover.png">
+<img class="img-fluid" src="web3matters-typography.jpg">
+<img class="img-fluid" src="web3matters-substack.png">
+<img class="img-fluid" src="web3matters-matters.png">
+<img class="img-fluid" src="web3matters-sponsor.png">
+<img class="img-fluid" src="web3matters-sticker.png">
 
 
       

@@ -34,7 +34,36 @@
   
 <link rel="stylesheet" href="/css/i-like-green.css">
 
-
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wly5jgf',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -97,6 +126,27 @@
       </div>
       <ul class="list-unstyled m-0">
         
+        <li class="mb-4">
+          <div class="text-end">
+  <div class="article-time">
+  <time datetime="2020-07-25T12:55:55.000Z" itemprop="datePublished">
+    7月 25日
+  </time>
+</div>
+
+</div>
+<h2 class="py-3">
+  <a href="/blog/applewatch/" itemprop="url">
+    Apple Watch 慢開箱
+  </a>
+</h2>
+<p>前年衝動買的 Apple Watch Series 3，默默變成我運動的必備工具，如果出門時才發現快沒電，我會等充電再去運動</p>
+<hr>
+
+        </li>
+        
+      
+      
         <li class="mb-4">
           <div class="text-end">
   <div class="article-time">

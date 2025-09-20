@@ -34,7 +34,36 @@
   
 <link rel="stylesheet" href="/css/i-like-green.css">
 
-
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'wly5jgf',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 
@@ -100,6 +129,27 @@
         <li class="mb-4">
           <div class="text-end">
   <div class="article-time">
+  <time datetime="2025-09-20T11:00:44.000Z" itemprop="datePublished">
+    9月 20日
+  </time>
+</div>
+
+</div>
+<h2 class="py-3">
+  <a href="/blog/touchgrass-taichung/" itemprop="url">
+    Touch Grass at Taichung
+  </a>
+</h2>
+<img src="/blog/touchgrass-taichung/touchgrass.jpg" class="img-fluid" title="A comic shows a snail climbing the curved white roof of a modern building in an urban park.">
+<hr>
+
+        </li>
+        
+      
+      
+        <li class="mb-4">
+          <div class="text-end">
+  <div class="article-time">
   <time datetime="2025-08-30T05:55:43.000Z" itemprop="datePublished">
     8月 30日
   </time>
@@ -107,11 +157,11 @@
 
 </div>
 <h2 class="py-3">
-  <a href="/blog/addiction/" itemprop="url">
+  <a href="/blog/doomscrolling/" itemprop="url">
     Doomscrolling!
   </a>
 </h2>
-<img src="/blog/addiction/doomscrolling.jpg" class="img-fluid" title="A cartoon-style yellow figure lies on the ground staring at a smartphone with a blank expression. Behind them is a dark, heavy shadow, suggesting a feeling of gloom or emptiness. The figure looks absorbed in the phone, symbolizing doomscrolling.">
+<img src="/blog/doomscrolling/doomscrolling.jpg" class="img-fluid" title="A cartoon-style yellow figure lies on the ground staring at a smartphone with a blank expression. Behind them is a dark, heavy shadow, suggesting a feeling of gloom or emptiness. The figure looks absorbed in the phone, symbolizing doomscrolling.">
 <hr>
 
         </li>
@@ -302,36 +352,6 @@
 
         </li>
         
-      
-      
-      
-      
-
-      
-      <div class="topping">
-        <a href="/blog/2021">2021</a>
-      </div>
-      <ul class="list-unstyled m-0">
-        
-        <li class="mb-4">
-          <div class="text-end">
-  <div class="article-time">
-  <time datetime="2021-12-12T04:26:19.000Z" itemprop="datePublished">
-    12月 12日
-  </time>
-</div>
-
-</div>
-<h2 class="py-3">
-  <a href="/blog/app-apeh-logo/" itemprop="url">
-    設計應用伯 app-apeh 的過程
-  </a>
-</h2>
-<p>應用伯 app-apeh 是我為 2019 年至 2021 年上班的公司設計的軟體開發品牌，這是跟某建築師事務所合夥創業的未命名小團隊，所以需要取名字！</p>
-<hr>
-
-        </li>
-        
         
         
       </ul>
@@ -343,7 +363,7 @@
         <span class="page-number current">1</span><a class="page-number" href="/blog/page/2/">2</a><a class="page-number" href="/blog/page/3/">3</a><a class="extend next" rel="next" href="/blog/page/2/">下一頁</a>
       </nav>
       
-    </ul></ul></ul></div>
+    </ul></ul></div>
   </div>
 </main>
 
